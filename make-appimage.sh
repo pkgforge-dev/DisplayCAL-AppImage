@@ -11,6 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/icons/hicolor/256x256/apps/displaycal.png
 export DESKTOP=/usr/share/applications/displaycal.desktop
 export DEPLOY_PYTHON=1
+export DEPLOY_SDL=1
 
 # Deploy dependencies
 quick-sharun \

@@ -13,7 +13,10 @@ export DESKTOP=/usr/share/applications/displaycal.desktop
 export DEPLOY_PYTHON=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/displaycal* /usr/share/DisplayCAL
+quick-sharun \
+	/usr/bin/displaycal* \
+	/usr/share/DisplayCAL \
+	/usr/share/argyllcms
 
 # Additional changes can be done in between here
 

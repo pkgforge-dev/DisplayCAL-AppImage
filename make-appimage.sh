@@ -29,7 +29,8 @@ done
 
 # Deploy dependencies
 quick-sharun \
-	/usr/bin/displaycal* \
+	/usr/bin/displaycal*  \
+	/usr/lib/libcblas.so* \
 	/usr/share/DisplayCAL \
 	/usr/share/argyllcms  \
 	"$@"

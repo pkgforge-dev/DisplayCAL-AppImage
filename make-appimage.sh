@@ -30,15 +30,18 @@ done
 
 # Deploy dependencies
 quick-sharun \
-	/usr/bin/displaycal*        \
-	/usr/lib/libcblas.so*       \
-	/usr/lib/libnss_resolve.so* \
-	/usr/lib/libuuid.so*        \
-	/usr/lib/libdav1d.so*       \
-	/usr/lib/libgomp.so*        \
-	/usr/lib/liblapack.so*      \
-	/usr/share/DisplayCAL       \
-	/usr/share/argyllcms        \
+	/usr/bin/displaycal*             \
+	/usr/lib/libcblas.so*            \
+	/usr/lib/libcap.so*              \
+	/usr/lib/libnss_resolve.so*      \
+	/usr/lib/libnss_mdns*minimal.so* \
+	/usr/lib/libnss_myhostname.so*   \
+	/usr/lib/libuuid.so*             \
+	/usr/lib/libdav1d.so*            \
+	/usr/lib/libgomp.so*             \
+	/usr/lib/liblapack.so*           \
+	/usr/share/DisplayCAL            \
+	/usr/share/argyllcms             \
 	"$@"
 
 

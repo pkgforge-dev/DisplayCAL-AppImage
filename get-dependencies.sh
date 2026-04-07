@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm displaycal sdl2_mixer
+pacman -Syu --noconfirm displaycal sdl2_mixer nss-mdns nss-myhostname
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"

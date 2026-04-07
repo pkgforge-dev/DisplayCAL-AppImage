@@ -12,6 +12,7 @@ export ICON=/usr/share/icons/hicolor/256x256/apps/displaycal.png
 export DESKTOP=/usr/share/applications/displaycal.desktop
 export DEPLOY_PYTHON=1
 export DEPLOY_SDL=1
+export DEPLOY_GDK=1
 
 # we have to passs a ton of binaries from the argyllcms package
 bins='
@@ -29,10 +30,15 @@ done
 
 # Deploy dependencies
 quick-sharun \
-	/usr/bin/displaycal*  \
-	/usr/lib/libcblas.so* \
-	/usr/share/DisplayCAL \
-	/usr/share/argyllcms  \
+	/usr/bin/displaycal*        \
+	/usr/lib/libcblas.so*       \
+	/usr/lib/libnss_resolve.so* \
+	/usr/lib/libuuid.so*        \
+	/usr/lib/libdav1d.so*       \
+	/usr/lib/libgomp.so*        \
+	/usr/lib/liblapack.so*      \
+	/usr/share/DisplayCAL       \
+	/usr/share/argyllcms        \
 	"$@"
 
 

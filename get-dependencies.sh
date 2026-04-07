@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm displaycal
+pacman -Syu --noconfirm displaycal sdl2_mixer
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
